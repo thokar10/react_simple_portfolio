@@ -1,0 +1,59 @@
+.header {
+  height: 40px;
+  padding: 2px;
+  background-color: black;
+}
+.namePerson {
+  font-size: 30px;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  animation: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.name-person {
+  font-size: 30px;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(99vw);
+  }
+}
+
+.image {
+  background-image: url("https://sujanpokhrelstc.netlify.app/images/image.jpg");
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+.middle {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.mail {
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 11px;
+  transition: all;
+}
+.mail:hover {
+  cursor: pointer;
+  color: red;
+  transform: scale(1.5);
+}
