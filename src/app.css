@@ -1,59 +1,198 @@
 .header {
-  height: 40px;
-  padding: 2px;
-  background-color: black;
-}
-.namePerson {
-  font-size: 30px;
-  color: aliceblue;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  animation: move;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-}
-.name-person {
-  font-size: 30px;
-  color: aliceblue;
-  font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(20 112 175);
+  color: azure;
+  max-width: 100%;
 }
 
-@keyframes move {
+.sv-image img {
+  height: 22px;
+  width: 18px;
+}
+.sv-image {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+.link {
+  display: flex;
+  gap: 50px;
+  transition: all;
+}
+.link a:hover {
+  color: red;
+  transform: translateY(2px);
+}
+.name p {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  animation-name: name;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+@keyframes name {
   from {
-    transform: translateX(0vw);
+    color: whitesmoke;
   }
   to {
-    transform: translateX(99vw);
+    color: orange;
   }
 }
+.link a {
+  text-decoration: none;
+  color: azure;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
 
-.image {
-  background-image: url("https://sujanpokhrelstc.netlify.app/images/image.jpg");
+.circle-image {
+  border-radius: 50%;
   height: 300px;
   width: 300px;
-  border-radius: 50%;
   background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
+  background-position: center;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/245/464/1000/sukuna-ryomen-sukuna-anime-manga-hd-wallpaper-preview.jpg");
 }
-.middle {
-  margin-top: 10px;
+.bdy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(20 112 175);
+  max-width: 100%;
+  padding: 10px;
+}
+.information {
+  width: 600px;
+  overflow-wrap: break-word;
+}
+.information h3 {
+  font-family: system-ui;
+  color: azure;
+
+  font-size: 22px;
+}
+
+.center {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.cdiv {
+  /* border: 1px solid black; */
+  height: 2px;
+  width: 490px;
+  background-color: whitesmoke;
+  margin-top: 21px;
+  animation: line;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes line {
+  from {
+    width: 490px;
+  }
+  to {
+    width: 200px;
+  }
+}
+.center p {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.skills {
+  padding: 50px;
+  display: flex;
+  gap: 90px;
+  max-width: 100%;
+  justify-content: center;
+}
+.box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 262px;
+  width: 290px;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+}
+.icon {
+  height: 30px;
+  color: whitesmoke;
+}
+
+.skills .box h3 {
+  color: whitesmoke;
+  font-size: 30px;
+}
+.skills .box p {
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.contact {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: whitesmoke;
+}
+.contact-image {
+  background-color: aqua;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://sujanpokhrelstc.netlify.app/images/contact.jpg");
+}
+.details {
+  display: flex;
+  flex-direction: column;
   gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
-.mail {
-  border: 2px solid black;
-  padding: 5px;
-  margin-top: 11px;
-  transition: all;
+.msg-box {
+  height: 38px;
+  width: 131px;
+  border: 1px solid whitesmoke;
 }
-.mail:hover {
-  cursor: pointer;
-  color: red;
-  transform: scale(1.5);
+.msg-box1 {
+  height: 50px;
+  width: 131px;
+  border: 1px solid whitesmoke;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+}
+.location {
+  color: aliceblue;
+  background-color: black;
+}
+.blue-colour {
+  background-color: rgb(20 112 175);
+}
+
+.location p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
