@@ -41,6 +41,7 @@ function App() {
             style={{ backgroundImage: `url(${luffy})` }}
           ></div>
           <div className="information">
+            <h1>Hello,</h1>
             <h3>
               I am full stack developer and i m very passionate about my work.
               With over 10 years of experience in full stack development,i can

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .header {
   display: flex;
   align-items: center;
@@ -53,17 +57,24 @@
   gap: 40px;
   background-color: rgb(20 112 175);
   max-width: 100%;
-  padding: 10px;
+  padding: 20px;
+  padding-top: 50px;
 }
 .information {
   width: 600px;
   overflow-wrap: break-word;
 }
-.information h3 {
-  font-family: system-ui;
+.information h1 {
+  letter-spacing: 1px;
   color: azure;
-
+  font-weight: normal;
+  font-family: system-ui;
+}
+.information h3 {
+  color: azure;
+  font-family: system-ui;
   font-size: 31px;
+  font-weight: normal;
 }
 
 .center {
@@ -130,6 +141,7 @@
   color: whitesmoke;
   font-weight: bolder;
   font-size: 20px;
+  padding: 10px;
 }
 .contact {
   max-width: 100%;
@@ -215,13 +227,14 @@
   justify-content: center;
   align-items: center;
 }
-.project-idea {
-  display: flex;
-  flex-direction: column;
+.project-idea h1 {
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
   padding: 50px;
+}
+.details h1 {
+  font-size: 25px;
 }
 .contact-box {
   color: black;
@@ -239,7 +252,4 @@
 .sv-image .top:hover {
   color: red;
   cursor: pointer;
-}
-@media screen(max-width:) {
-  
 }
