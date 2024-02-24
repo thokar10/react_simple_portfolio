@@ -99,13 +99,13 @@ function App() {
             </div>
           </div>
         </form>
+      </div>
 
-        <div class="footer">
-          <div class="text">
-            <div class="address">
-              <div>Bouddha Nayabasti,</div>
-              <div>sabin1076@gmail.com.np.&copy; All right reserved.</div>
-            </div>
+      <div class="footer">
+        <div class="text">
+          <div class="address">
+            <div>Bouddha Nayabasti,</div>
+            <div>sabin1076@gmail.com.np.&copy; All right reserved.</div>
           </div>
         </div>
       </div>

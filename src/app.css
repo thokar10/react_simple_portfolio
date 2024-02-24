@@ -9,13 +9,13 @@
   padding: 20px;
   background-color: rgb(20 112 175);
   color: azure;
-  max-width: 100%;
 }
 
 .sv-image img {
   height: 22px;
   width: 18px;
 }
+
 .sv-image {
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  background-color: rgb(20 112 175);
+
   max-width: 100%;
   padding: 20px;
   padding-top: 50px;
@@ -149,6 +149,7 @@
   justify-content: center;
   gap: 30px;
   color: whitesmoke;
+  padding: 10px;
 }
 .contact-image {
   background-color: aqua;
@@ -179,7 +180,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+
   height: 70px;
   width: 100%;
   background-color: black;
@@ -252,4 +253,11 @@
 .sv-image .top:hover {
   color: red;
   cursor: pointer;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .link {
+    display: flex;
+    gap: 16px;
+    transition: all;
+  }
 }
