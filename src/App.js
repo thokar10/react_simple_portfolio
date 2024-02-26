@@ -8,6 +8,7 @@ import { faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faCompassDrafting } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -19,13 +20,13 @@ function App() {
             <p>Sabin Thokar</p>
           </div>
           <div className="link">
-            <a className="mylink" href="">
+            <Link className="a" to={"/"}>
               Contact
-            </a>
-            <a href="">Media</a>
-            <a href="">Projects</a>
-            <a href="">Resume</a>
-            <a href="">Resources</a>
+            </Link>
+            <Link className="a" to={"/"}>
+              Project
+            </Link>
+
             <div className="sv-image">
               <FontAwesomeIcon className="top" icon={faEnvelope} />
               <FontAwesomeIcon className="top" icon={faTwitter} />
@@ -74,8 +75,8 @@ function App() {
 
             <h3>UI / UX</h3>
             <p>
-              I can develop responsive websites and deliver you at the quickest
-              time. Trust me on that one!
+              I can design websites and deliver you at the quickest time. Trust
+              me on that one!
             </p>
           </div>
         </div>
