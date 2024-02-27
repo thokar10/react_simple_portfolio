@@ -279,8 +279,8 @@
     gap: 0px;
   }
   .circle-image {
-    height: 142px;
-    width: 137px;
+    height: 200px;
+    width: 196px;
   }
   .information {
     display: flex;
@@ -306,9 +306,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 55px;
-    padding: 24px;
-    width: 345px;
   }
   .project {
     padding: 18px;
@@ -325,5 +322,9 @@
   }
   .address {
     padding: 5px;
+  }
+  .contact-image {
+    height: 246px;
+    width: 239px;
   }
 }
